@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Register Page</title>
+{% endblock %}
+
+{% block body %}
+<h1 class="mt-4 text-center">Register</h1>
+<form method="POST" action="registered">
+    <div>
+        <label for="usuario">User:</label>
+        <input type="text" id="user" name="user" placeholder="user">
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password">
+    </div>
+    <div>
+        <label for="password">Password Again:</label>
+        <input type="password" id="password" name="password" placeholder="password">
+    </div>
+    <input type="submit" name="send" value="register">
+</form>
+
+{% endblock %}

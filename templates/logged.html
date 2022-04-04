@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+   <meta charset='utf-8'>
+   <title>User Page</title>
+{% endblock %}
+
+{% block body %}
+   <div>
+       <p class="mt-4 text-center">User: {{ user }}</p>
+       <p class="mt-4 text-center">Password: {{ password }}</p>
+   </div>
+{% endblock %}
